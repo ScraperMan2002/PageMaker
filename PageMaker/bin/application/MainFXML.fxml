@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="433.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <left>
+      <Pane prefHeight="431.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblTimeTaken" layoutX="10.0" layoutY="231.0" text="Book Name:" />
+            <TextField fx:id="txtBook" layoutX="83.0" layoutY="227.0" prefHeight="25.0" prefWidth="506.0" />
+            <Button layoutY="407.0" mnemonicParsing="false" onMouseClicked="#titleExecute" prefHeight="25.0" prefWidth="316.0" text="Title Execute" />
+            <TextArea fx:id="txaResult" layoutX="2.0" layoutY="2.0" prefHeight="195.0" prefWidth="596.0" />
+            <Label layoutX="285.0" layoutY="204.0" text="Title Maker:" />
+            <Button layoutX="318.0" layoutY="407.0" mnemonicParsing="false" onMouseClicked="#sectionExecute" prefHeight="25.0" prefWidth="282.0" text="Section Execute" />
+            <TextField fx:id="txtAuthor" layoutX="55.0" layoutY="264.0" prefHeight="25.0" prefWidth="241.0" />
+            <Label fx:id="lblSeason211" layoutX="10.0" layoutY="268.0" text="Author:" />
+            <TextField fx:id="txtYear" layoutX="333.0" layoutY="264.0" prefHeight="25.0" prefWidth="254.0" />
+            <Label fx:id="lblSeason2111" layoutX="305.0" layoutY="268.0" text="Year:" />
+            <Label fx:id="lblTimeTaken2" layoutX="6.0" layoutY="317.0" text="Sections:" />
+            <TextField fx:id="txtSections" layoutX="54.0" layoutY="313.0" prefHeight="25.0" prefWidth="533.0" />
+            <Label layoutX="278.0" layoutY="296.0" text="Both Sections:" />
+            <Label fx:id="lblTimeTaken21" layoutX="6.0" layoutY="349.0" text="Iteration Prefix:" />
+            <TextField fx:id="txtPrefix" layoutX="86.0" layoutY="345.0" prefHeight="25.0" prefWidth="139.0" text="卷" />
+            <Label fx:id="lblTimeTaken211" layoutX="228.0" layoutY="349.0" text="Iteration Start:" />
+            <TextField fx:id="txtStart" layoutX="303.0" layoutY="345.0" prefHeight="25.0" prefWidth="109.0" />
+            <Label fx:id="lblTimeTaken2111" layoutX="414.0" layoutY="349.0" text="Iteration End:" />
+            <TextField fx:id="txtEnd" layoutX="484.0" layoutY="345.0" prefHeight="25.0" prefWidth="104.0" />
+            <Button layoutX="6.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#iteration" prefHeight="25.0" prefWidth="582.0" text="Engage Iteration" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>
